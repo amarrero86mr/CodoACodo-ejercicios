@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@500&family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Lobster&family=Open+Sans:wght@500&family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@500&family=Poppins:wght@500&family=REM&display=swap');
+
+
+body{
+    width: 750px;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.banner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 750px;
+    height: auto;
+    opacity: 0.6;
+    z-index: 0;    
+}
+
+nav{
+    width: 750px;
+    height: 75px;
+    position: fixed;
+    overflow: hidden;
+    display: block;
+    text-align: right;
+    font-family: 'Lobster', cursive;  
+    margin-top: 0px;
+    border-bottom: 3px solid grey; 
+}
+.link {
+    position: relative;
+    z-index: 2;
+    margin: 10px;
+}
+main {
+    padding-top: 75px;
+}
+h1, h2, h3, a{
+    font-family: 'REM', sans-serif;
+}
+
+p {
+    font-family:'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+.content{
+    width: 350;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    background: rgb(76, 202, 204);
+    background: linear-gradient(90deg, rgba(34,193,195,0.6) 0%, rgb(250, 198, 85,0.6) 100%);
+    
+    text-align: center;
+
+    
+}

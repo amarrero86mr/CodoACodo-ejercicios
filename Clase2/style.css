@@ -1,0 +1,33 @@
+nav div, .textDer{
+    text-align: end;
+
+}
+
+main{
+    width: 95%;
+}
+.RecetasDia {
+    display: flex;
+}
+.articuloFin{
+    background-color: cornflowerblue;
+
+}
+.contenedor{
+    width: 50%;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor p {
+    width: 100%;
+    margin: 15px;
+}
+.tituloSecundario{
+    font-size: 20px;
+    color: crimson;
+    padding: 10px;
+}
+strong .tituloSecundario{
+    margin-bottom: 10px;
+}

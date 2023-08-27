@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--https://formsubmit.co/amarrero86mr@gmail.com-->
+    <main>
+    <H1>Formulario de Contacto</H1>
+    <form action="https://formsubmit.co/amarrero86mr@gmail.com" method="POST">
+        <div>
+            <label for="nombreApellido" >Nombre y Apellido</label>
+            <input type="text" name="nombreApellido" tabindex="1" placeholder="nombre y apellido" required pattern="^[A-za-Z]+ [A-za-Z]+$" x-moz-errormessage="complete con su nombre y appellido">
+        </div>
+        <div>
+            <label for="edad">Edad</label>
+        <input type="number" min="0" name="edad" placeholder="edad" pattern="^[1-9]\d*$">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email"  placeholder="e-mail" required="complete con su e-mail">
+        </div>
+        <div>
+            <label for="motivoConsulta">Motivo de la Consulta</label>
+            <select name="motivo" >
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerancia</option>
+                <option value="FechaExamen">Fechas de Examen</option>
+                <option value="aviso">Avisos</option>
+              </select>
+        </div>
+        <div>
+            <label for="cursando">¿Estas cursando?</label>
+            <input type="radio" value="si" name="cursando">SI
+            <input type="radio" value="no" name="cursando">NO
+        </div>
+        <div>
+            <label for="envioMaterial">¿Quieres recibir material didáctico?</label>
+            <input type="checkbox" name="envioMaterial">si!!
+        </div>
+        <div>
+            <label for="comentarios">Comentarios</label><br>
+            <textarea id="comentarios" name="comentarios" rows="5" cols="30" placeholder="dinos que necesitas..."></textarea>
+        </div>
+        <div>
+            <input class="btn" type="submit" value="Registrarse">
+        </div>
+    </form>
+</main>
+<aside>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti totam mollitia eos dolorum harum adipisci necessitatibus iste tempore. Eius quibusdam illum dolor qui voluptate rerum deserunt eum dolorem velit!</p>
+    </div>
+</aside>
+</body>
+</html>
