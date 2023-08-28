@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Poppins:wght@500&family=REM&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+body{
+    height: 200px;
+    background-image: linear-gradient(rgb(118, 68, 68), rgb(77, 33, 103));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: rgb(52, 59, 75);
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px, 20px;
+    color: burlywood;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+    background-color: rgb(118, 68, 68);
+    
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: black;
+}
+
+.menu-vertical li a{
+    display: block;
+    color:white;
+    padding: 15px;
+    text-decoration: none;
+}
