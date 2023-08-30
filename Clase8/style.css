@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Overpass&family=Poppins:wght@500&family=REM&display=swap');
+
+body{
+    font-family: 'Overpass', sans-serif;
+}
+nav {
+    display: flex;    
+}
+nav {
+    height: 30px;
+    background-color: rgb(144, 37, 37);
+    color: rgb(49, 2, 2);
+    font-weight: 800;
+}
+img{
+    width: 15px;
+}
+nav:nth-child(1) > div:nth-child(1),
+nav:nth-child(1) > div:nth-child(2) {
+    flex: 1;
+}
+nav div p{
+    margin-top:0px;
+}
+nav div{
+    margin-top: 7px;
+}
+/*esto no me gusto nada*/
+.contain{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    align-items: stretch;
+    gap: 10px;
+}
+.contain div{
+    padding: 2px;
+    border: 2px solid rgb(8, 82, 8);
+}
+
+.contain div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contain div h2{
+    flex-basis: 100%;
+    background-color: rgb(166, 172, 172);
+    margin-top: 0;
+    
+    
+}
