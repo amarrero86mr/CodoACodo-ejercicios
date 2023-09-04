@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.contain{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "foto1 foto1 foto2 foto2"
+    "foto1 foto1 foto3 foto3"
+    "foto4 foto5 foto3 foto3"
+    "foto6 foto7 foto8 foto9"
+    ;
+}
+article{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    max-width: 100%;
+    height: auto;
+}
+img{
+    padding: 5px;
+}
+.foto1 {
+    background-color: #257d31;
+    grid-area: foto1;
+    justify-self: center;
+}
+.foto2 {
+    background-color: #257d31;
+    grid-area: foto2;
+    justify-self: center;
+}
+.foto3 {
+    background-color: #257d31;
+    grid-area: foto3;
+    justify-self: center;
+}
+.foto4 {
+    background-color: #257d31;
+    grid-area: foto4;
+    justify-self: center;
+}
+.foto5 {
+    background-color: #257d31;
+    grid-area: foto5;
+    justify-self: center;
+}
+.foto6 {
+    background-color: #257d31;
+    grid-area: foto6;
+    justify-self: center;
+}
+.foto7 {
+    background-color: #257d31;
+    grid-area: foto7;
+    justify-self: center;
+}
+.foto8 {
+    background-color: #257d31;
+    grid-area: foto8;
+    justify-self: center;
+}
+.foto9 {
+    background-color: #257d31;
+    grid-area: foto9;
+    justify-self: center;
+}

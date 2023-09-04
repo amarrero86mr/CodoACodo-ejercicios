@@ -1,0 +1,82 @@
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+}
+.contain{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "enc enc" "princ ads" "pie pie";
+}
+header {
+    background-color: #257d31;
+    grid-area: enc;
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+}
+header h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing:10px;
+}
+aside {
+    background-color: #47a056;
+    grid-area: ads;
+}
+main {
+    height: auto;
+    background-color: #93ffa7;
+    grid-area: princ;
+}
+.imgIcono{
+    border: 2px solid #70d4bd;
+    border-radius: 10px 20px;
+}
+footer {
+    background-color: #257d31;
+    grid-area: pie;
+}
+/* navegador */
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+.dropdown-content>li:hover {
+    background-color: rgba(241, 102, 102, 0.254);
+}
+
+.dropdown-content > li{
+    list-style: none;
+    display: block;
+    height: 35px;
+    width: 100px;
+    background-color: rgba(138, 122, 62, 0.3);
+   
+}
+
+.dropdown-content>li>a:link{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(23, 62, 62);
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
