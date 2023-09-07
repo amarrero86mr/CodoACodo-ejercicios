@@ -4,7 +4,7 @@
     
 }
 .contain{
-    max-width: 600px;
+    max-width: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
@@ -12,14 +12,17 @@
     "foto1 foto1 foto2 foto2"
     "foto1 foto1 foto3 foto3"
     "foto4 foto5 foto3 foto3"
-    "foto6 foto7 foto8 foto9"
-    ;
+    "foto6 foto7 foto8 foto9";
+    padding: 10px;
 }
 article{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 5px;
     max-width: 100%;
     height: auto;
+}
+h3 {
+    text-align: center;
 }
 img{
     padding: 5px;
