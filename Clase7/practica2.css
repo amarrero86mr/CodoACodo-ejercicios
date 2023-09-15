@@ -1,0 +1,55 @@
+@keyframes bizaro{
+    from{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(222, 184, 135);
+    }
+   
+    to{
+        width: 45px;
+        height: 45px;
+        transform: translate(-10px, 10px) rotate(-15deg);
+        background-image: linear-gradient(rgba(164, 184, 11, 0.486), rgba(79, 123, 50, 0.236));
+    }
+}
+
+@keyframes subir1{
+    from{
+        transform: scale(1);
+        transform: translate(0);
+        background-color: burlywood;
+    }
+    to{
+        transform: scale(0.6, 1.4) translate(0, -20px);
+        background-color: rgba(147, 204, 240, 0.862);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin: 10%;
+    width: 450px;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+}
+section{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.div1{
+    animation: bizaro 2s linear 0.2s infinite normal;
+}
+.div3{
+    animation: subir1 3s linear 1s infinite normal;
+}
+
+
+
