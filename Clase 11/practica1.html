@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeras practicas JavaScript</title>
+</head>
+<body>
+    <h1>Practica 11 - introduccion Js</h1>
+
+    <a href="https://www.google.com/" target="_blank">al otro lado</a>
+    <p> repasando mensajes, variables, funciones de conversion, operadores</p>
+    
+    <script>
+        console.log("hola perinola");
+        console.info("este es un console.info...");
+        console.warn("este es un ejemplo de advertencia");
+        console.error("este es un ejemplo de error");
+        console.dir(document.links);
+        console.log("%cMensaje verde y grande", "color: green; font-size: x-large");
+
+        console.table({Campo1:"valor1", Campo2:"valor2", Campo3:"valor3"});
+        var gente = [["Lina", "Garcia"], ["Pedro", "Pazcal"], ["Almendra", "Guitierrez"]];
+        console.table(gente);
+
+        var sumando1 = 23;
+        var sumando2 = 33;
+        let suma = sumando1 + sumando2;
+        console.log(suma);
+
+        document.write(13);
+        document.write("hola mundo");
+
+        alert("hola mundo");
+        let nombre = prompt("¿Cómo te llamas?");
+        let aceptar = confirm("¿Acepta los términos?");
+
+        let numero = 10;
+        numero *= 2;
+        console.log(numero);
+        console.log( 12 != 10);
+        
+        /** algunos operadores en estructura reducida consultar en clase */
+        console.log(numero);
+        let resultado1 = numero >= 13 ? 'es mayor' : 'es menor';
+        console.log(resultado1);
+        let resultado2 = numero == 13 && numero == 21 ;
+        console.log(resultado2);
+        
+        
+        let elegiNumero = prompt("elige un numero para sumarle 10, el resultado por consola");
+        numero = parseInt(elegiNumero) + 10;
+        console.log(numero)
+
+        
+        
+
+    </script>
+    
+</body>
+</html>
