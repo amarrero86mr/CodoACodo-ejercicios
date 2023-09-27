@@ -22,11 +22,13 @@ function listaDeCompras() {
     // preguntar si quiero seguir agregando productos
     }while( siguiente == "si");
     
-    productos.forEach(element => {
-        console.log(element);
-    });
+    return productos;
 }
 
-listaDeCompras();
+let compras = []
+compras = listaDeCompras();
 
+compras.forEach(element => {
+  console.log(element.nombre + " - " + element.precio + " - " + element.stock);
+});
  
