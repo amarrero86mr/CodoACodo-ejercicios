@@ -103,6 +103,28 @@ const peliculas = [
 
 //datos del html
 const buscar = document.querySelector("#buscar");
+// funcion de renderizado de peliculas
+let render = document.getElementById('render');
+
+function renderPeliculas(array) {
+    let contenido = ""
+    array.forEach(obj => {
+
+        contenido += `
+        <div class="peliRender">
+            <h2>${obj.titulo}</h2>
+            <ul>
+                <li>Director: ${obj.director}</li>
+                <li>Genero: ${obj.genero}</li>
+                <li>Año: ${obj.anio}</li>
+                <li>Clasificacion IMDB: ${obj.calificacionIMDB}</li>
+            </ul>
+        </div>
+    `
+        render.innerHTML = contenido;
+    })
+};
+
 //tomando el valor a comparar
 buscar.addEventListener('click', () => {
     const puntuacion = document.querySelector(".puntuacion").value;
@@ -113,23 +135,25 @@ buscar.addEventListener('click', () => {
 function mostrarPelis(valor) {
     return new Promise(function (res, rej) {
         const peliculasValor = peliculas.filter(pelis => pelis.calificacionIMDB >= valor)
-        if (peliculasValor) {
+        if (peliculasValor.length > 0) {
             setTimeout(function() {
                 res(peliculasValor) // pasa al THEN
-            }, 5000)
+            }, Math.random() * 5000) //parece divertido no saber cuando, jaja
         } else {
             setTimeout(function () {
                 rej("No se ha encontrado peliculas con esa puntuación") // pasa al CATCH
-            }, 3000)
+            }, Math.random() * 4000)
         }
     })
 }
 
+// manejando las respuestas de las promesas
 mostrarPelis(valorComaprar)
     .then(function (persona) {
         return persona
     })
     .then(function (persona) {
+        renderPeliculas(persona)
         persona.forEach(element => {
             console.log(element.titulo)
         });

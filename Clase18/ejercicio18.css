@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(rgb(242, 126, 67),rgb(15, 77, 102));
+}
+.hero {
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: rgb(66, 12, 2);
+}
+.puntuacion{
+    background-color: transparent;
+    border:rgb(66, 12, 2) solid 2px;
+    border-radius: 4px;
+    text-align: center;
+}
+#buscar{
+    width: 75px;
+    background-color: transparent;
+    border:rgb(66, 12, 2) solid 2px;
+    color: rgb(66, 12, 2);
+    border-radius: 6px;
+    font-weight: 700;
+}
+#buscar:hover{
+    background-color: transparent;
+    border:rgb(152, 54, 1) solid 2px;
+    color: rgb(152, 54, 1);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.25s;
+}
+#render{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+}
+.peliRender>h2{
+    font-size: 13px;
+    height: 45px;
+    align-content: flex-start;
+}
+.peliRender{
+    width: 170px;
+    padding: 5px;
+    border: 2px rgb(25, 46, 52) solid;
+    border-radius: 10px;
+    color: rgb(25, 46, 52);
+    font-size: 10px;
+    gap: 10px;
+}
+.peliRender > ul{
+    list-style: none;
+}
+.peliRender:hover{
+    border: 2px rgb(66, 124, 140) solid;
+}
