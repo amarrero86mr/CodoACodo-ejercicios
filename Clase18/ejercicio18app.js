@@ -160,5 +160,10 @@ mostrarPelis(valorComaprar)
     })
     .catch(function (err) {
         console.log(err)
+        render.innerHTML =`
+        <div class="peliRender">
+            <p>No se ha encontrado peliculas con esa puntuación</p>
+        </div>
+    `
     })
 });
