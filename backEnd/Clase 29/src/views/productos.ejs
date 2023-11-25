@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head.ejs") %>
+</head>
+<body>
+    <%- include("./partials/navegador.ejs") %>
+    <h1><%= titulo %></h1>
+
+    <p>Dolar: <%- dollar >= 1000 ? 'Mayor a $1000' : 'Menor a $1000' %> </p>
+
+    <ul>
+        <% productos.forEach( (item) => { %>
+            <li>
+                <h2>
+                    <%= item.producto %>
+                </h2>
+                <p> <%= item.detalle %></p>
+                <p><strong> precio: $<%= item.precio * dollar %>.- </strong></p>
+            </li>
+        <% }); %>
+    </ul>
+
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>

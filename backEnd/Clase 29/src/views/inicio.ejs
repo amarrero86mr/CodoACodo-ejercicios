@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head.ejs") %>
+</head>
+<body>
+    <%- include("./partials/navegador.ejs") %>
+
+    <h1><%= titulo %></h1>
+    <h3><%= test("homero") %></h3>
+
+    <div class="producto">
+        <img src="https://picsum.photos/150" alt="">
+        <% if (promocion) { %>
+            <p><%= parrafo %></p>
+        <% } else { %>
+            <p>No hay Promoción vigente</p>
+        <% } %>
+    </div>
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>
