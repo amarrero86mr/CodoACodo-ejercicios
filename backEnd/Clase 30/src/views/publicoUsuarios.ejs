@@ -3,21 +3,28 @@
   <head>
    <%- include('./partials/head.ejs') %>
   </head>
-  <body>
-    <h1>Usuarios</h1>
+  <body class="container">
+    <h1 >Usuarios</h1>
 
     <div class="container">
         <div class="row">
-            <div class="col-3">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            <% data.forEach(element => { %>
+  
+                <div class="col-3">
+                    <div class="card text-bg-secondary">
+                        <img src="<%= element.imagen %>" class="card-img-top " alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title h5"><%= element.nombre %> ( <%= element.edad %> )</h2>
+                            <ul>
+                                <li><p class="card-text"><%= element.email %></p></li>
+                                <li><p class="card-text"><%= element.telefono %></p></li>
+                                <li><p class="card-text"><%= element.ciudad %></p></li>
+                            </ul>
+                            <a href="/usuarios/<%= element.id %>" class="btn btn-info">Mostrar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <% } );  %>
         </div>
     </div>
         

@@ -6,7 +6,7 @@ const datosFalsos = [
         telefono: "+54 9 11 1234 5678",
         edad: 28,
         ciudad: "Buenos Aires",
-        imagen: "https://via.placeholder.com/150?text=Juan"
+        imagen: "/avatar/1.png" 
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const datosFalsos = [
         telefono: "+54 9 11 2345 6789",
         edad: 35,
         ciudad: "Córdoba",
-        imagen: "https://via.placeholder.com/150?text=María"
+        imagen: "/avatar/2.png"
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const datosFalsos = [
         telefono: "+54 9 11 3456 7890",
         edad: 22,
         ciudad: "Rosario",
-        imagen: "https://via.placeholder.com/150?text=Carlos"
+        imagen: "/avatar/3.png"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const datosFalsos = [
         telefono: "+54 9 11 4567 8901",
         edad: 29,
         ciudad: "Mendoza",
-        imagen: "https://via.placeholder.com/150?text=Ana"
+        imagen: "/avatar/4.png"
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const datosFalsos = [
         telefono: "+54 9 11 5678 9012",
         edad: 31,
         ciudad: "Salta",
-        imagen: "https://via.placeholder.com/150?text=Javier"
+        imagen: "/avatar/5.png"
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const datosFalsos = [
         telefono: "+54 9 11 6789 0123",
         edad: 26,
         ciudad: "San Juan",
-        imagen: "https://via.placeholder.com/150?text=Laura"
+        imagen: "/avatar/7.png"
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ const datosFalsos = [
         telefono: "+54 9 11 7890 1234",
         edad: 33,
         ciudad: "La Plata",
-        imagen: "https://via.placeholder.com/150?text=Roberto"
+        imagen: "/avatar/12.png"
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ const datosFalsos = [
         telefono: "+54 9 11 8901 2345",
         edad: 27,
         ciudad: "Misiones",
-        imagen: "https://via.placeholder.com/150?text=Sofía"
+        imagen: "/avatar/8.png"
     },
     {
         id: 9,
@@ -78,7 +78,7 @@ const datosFalsos = [
         telefono: "+54 9 11 9012 3456",
         edad: 30,
         ciudad: "Neuquén",
-        imagen: "https://via.placeholder.com/150?text=Miguel"
+        imagen: "/avatar/9.png"
     },
     {
         id: 10,
@@ -87,7 +87,7 @@ const datosFalsos = [
         telefono: "+54 9 11 0123 4567",
         edad: 24,
         ciudad: "Tucumán",
-        imagen: "https://via.placeholder.com/150?text=Elena"
+        imagen: "/avatar/11.png"
     },
     {
         id: 11,
@@ -96,7 +96,7 @@ const datosFalsos = [
         telefono: "+54 9 11 1234 5678",
         edad: 32,
         ciudad: "Bahía Blanca",
-        imagen: "https://via.placeholder.com/150?text=Diego"
+        imagen: "/avatar/10.png"
     },
     {
         id: 12,
@@ -105,7 +105,7 @@ const datosFalsos = [
         telefono: "+54 9 11 2345 6789",
         edad: 29,
         ciudad: "San Luis",
-        imagen: "https://via.placeholder.com/150?text=Valeria"
+        imagen: "/avatar/13.png"
     }
 ];
 

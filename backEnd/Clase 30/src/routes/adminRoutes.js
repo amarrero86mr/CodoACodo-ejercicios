@@ -1,9 +1,13 @@
 import { Router } from 'express';
 const router = Router();
+import datos from '../model/datos.js';
 
 //obtener todos los usuarios
 router.get('/admin/usuarios', (req,res) => {
-    res.send("mostrando todos los usuarios")
+    //res.send("mostrando todos los usuarios")
+    res.render('adminUsuarios.ejs', {
+        data: datos
+    });
 });
 
 //motar usuarios para actualizar

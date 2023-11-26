@@ -3,35 +3,37 @@
   <head>
    <%- include('./partials/head.ejs') %>
   </head>
-  <body>
+  <body class="container">
     <h1>Admin - usuarios</h1>
-    <table class="table">
+    <table class="table table-striped">
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Email</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Ciudad</th>
+          <th scope="col">Perfil</th>
+          <th scope="col">Acciones</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
+        <% data.forEach(element => { %>
+          <tr>
+            <th scope="row"><%= element.id %></th>
+            <td><%= element.nombre %></td>
+            <td><%= element.email %></td>
+            <td><%= element.telefono %></td>
+            <td><%= element.edad %></td>
+            <td><%= element.ciudad %></td>
+            <td><img src="<%= element.imagen %>" width="150px" alt=""></td>
+            <td>
+              <a href="./admin/usuarios/<%= element.id %>">EDITAR</a>
+              <a href="./admin/usuarios/borrar/<%= element.id %>">BORRAR</a>
+            </td>
+          </tr>
+        <% }); %>
       </tbody>
     </table>
     

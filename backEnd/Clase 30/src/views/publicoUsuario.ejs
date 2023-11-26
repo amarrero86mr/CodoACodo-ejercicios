@@ -4,19 +4,21 @@
    <%- include('./partials/head.ejs') %>
   </head>
   <body>
-    <h1>Usuarios</h1>
+    <h1><%= data.nombre %> (<%= data.edad %>)</h1>
 
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="col-4">
+                <img src="<%= data.imagen %>" width="175px" alt="..." >
             </div>
-            <div class="col-6">
+            <div class="col-8">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <ul>
+                            <li><p class="card-text"><%= data.email %></p></li>
+                            <li><p class="card-text"><%= data.telefono %></p></li>
+                            <li><p class="card-text"><%= data.ciudad %></p></li>
+                        </ul>
                     </div>
                 </div>
             </div>
