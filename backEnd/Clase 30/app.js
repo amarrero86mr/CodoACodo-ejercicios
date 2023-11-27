@@ -6,6 +6,8 @@ import adminRoutes from './src/routes/adminRoutes.js'
 
 //middleware
 app.use(express.static('public'));
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 
 //motor views
 app.set('views', './src/views');

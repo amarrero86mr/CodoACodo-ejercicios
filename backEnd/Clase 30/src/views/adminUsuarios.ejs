@@ -29,8 +29,8 @@
             <td><%= element.ciudad %></td>
             <td><img src="<%= element.imagen %>" width="150px" alt=""></td>
             <td>
-              <a href="./admin/usuarios/<%= element.id %>">EDITAR</a>
-              <a href="./admin/usuarios/borrar/<%= element.id %>">BORRAR</a>
+              <a href="/admin/usuarios/<%= element.id %>">EDITAR</a>
+              <a href="/admin/usuarios/borrar/<%= element.id %>">BORRAR</a>
             </td>
           </tr>
         <% }); %>

@@ -4,13 +4,24 @@
    <%- include('./partials/head.ejs') %>
   </head>
   <body>
-    <h1>Admin - Actualizar</h1>
+    <h1>Admin - Actualizar (<%= data.nombre %>, ID: <%= data.id %>)</h1>
         
-    <form action="/admin/usuarios/id" method="post">
+    <form action="/admin/usuarios/<%= data.id %>" method="post">
         <label for="">
             Nombre
-            <input type="text" name="nombre" value="nombre...">
+            <input type="text" name="nombre" value="<%= data.nombre %>">
         </label>
+        <label for="">
+          E-mail
+          <input type="email" name="email" value="<%= data.email %>">
+        </label>
+        <label for="">
+          Telefono
+          <input type="tel" name="telefono" value="<%= data.telefono %>">
+        </label>
+
+
+
         <input type="submit" value="Actualizar">
     </form>
 
