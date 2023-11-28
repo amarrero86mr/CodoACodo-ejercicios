@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <%- include('./partials/head.ejs') %>
+  </head>
+  <body>
+    <h1>Admin - Crear</h1>
+        
+    <form action="/admin/usuarios" method="post">
+        <label for="">
+            Nombre
+            <input type="text" name="nombre">
+        </label>
+        <input type="submit" value="Crear Usuario">
+    </form>
+
+
+    <!-- footer incluido desde el partial footer.ejs-->
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

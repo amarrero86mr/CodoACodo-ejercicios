@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <%- include('./partials/head.ejs') %>
+  </head>
+  <body class="container">
+    <h1>Admin - usuarios</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Email</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Ciudad</th>
+          <th scope="col">Perfil</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% data.forEach(element => { %>
+          <tr>
+            <th scope="row"><%= element.id %></th>
+            <td><%= element.nombre %></td>
+            <td><%= element.email %></td>
+            <td><%= element.telefono %></td>
+            <td><%= element.edad %></td>
+            <td><%= element.ciudad %></td>
+            <td><img src="<%= element.imagen %>" width="150px" alt=""></td>
+            <td>
+              <a href="/admin/usuarios/<%= element.id %>">EDITAR</a>
+              <a href="/admin/usuarios/borrar/<%= element.id %>">BORRAR</a>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    
+    <!-- footer incluido desde el partial footer.ejs-->
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

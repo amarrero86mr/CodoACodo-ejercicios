@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <%- include('./partials/head.ejs') %>
+  </head>
+  <body>
+    <h1><%= data.nombre %> (<%= data.edad %>)</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="<%= data.imagen %>" width="175px" alt="..." >
+            </div>
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-body">
+                        <ul>
+                            <li><p class="card-text"><%= data.email %></p></li>
+                            <li><p class="card-text"><%= data.telefono %></p></li>
+                            <li><p class="card-text"><%= data.ciudad %></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- footer incluido desde el partial footer.ejs-->
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
