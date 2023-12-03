@@ -1,0 +1,16 @@
+form div{
+    margin: 10px 0;
+}
+form div label{
+    width: 200px;
+}
+
+.contenedor {
+    width: 1200px;
+}
+
+#galeria{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1er);
+}

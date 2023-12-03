@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todas las Imagenes</title>
+    
+    <link rel="stylesheet" href="../../public/css/estilo.css">
+</head>
+<body>
+    <div class="contenedor"> 
+        <h1>Galeria de Imagenes</h1>
+        <% if (datos.length > 0) { %>
+            <ul id="galeria">
+                <% datos.forEach(imagen => { %>
+                <li>
+                    <div>
+                    <strong>ID: <%= imagen.id %></strong>
+                    </div>
+                    <img src=/uploads/<%= imagen.nombre %> alt="" width="350px">
+                    <p>
+                        <%=imagen.descripcion %>
+                    </p>
+
+                    <a href="/editar/<%= imagen.id %>">Editar imagen</a>
+                    <a href="/borrar/<%= imagen.id %>">Borrar imagen</a>
+                </li>
+                <% }); %>
+            </ul>
+        <% } else { %>
+            <p>No hay imagenes subidas. <a href="/agregar">Agregar imagenes</a></p>
+        <% } %>
+    </div>
+    
+
+    
+</body>
+</html>
