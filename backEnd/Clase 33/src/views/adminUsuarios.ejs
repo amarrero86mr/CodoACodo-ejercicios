@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include("partials/head") %>
+</head>
+
+<body>
+    <h1>Admin - Usuarios</h1>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Ciudad</th>
+                    <th scope="col">Perfil</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(usuario=> { %>
+                    <tr>
+                        <td>
+                            <%= usuario.id %>
+                        </td>
+                        <td>
+                            <%= usuario.nombre %>
+                        </td>
+                        <td>
+                            <%= usuario.email %>
+                        </td>
+                        <td>
+                            <%= usuario.telefono %>
+                        </td>
+                        <td>
+                            <%= usuario.edad %>
+                        </td>
+                        <td>
+                            <%= usuario.ciudad %>
+                        </td>
+                        <td>
+                            <img src="<%= usuario.imagen %>" width="100">
+                        </td>
+                        <td>
+                            <a href="/admin/usuarios/<%= usuario.id %>">Editar </a>
+                            <a href="/admin/usuarios/borrar/<%= usuario.id %>">Borrar </a>
+                        </td>
+                    </tr>
+                    <% }) %>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <%- include("partials/footer") %>
+</body>
+
+</html>

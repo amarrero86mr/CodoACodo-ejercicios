@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include("partials/head") %>
+</head>
+
+<body>
+    <h1> <%= titulo %></h1>
+    
+    <form action="/admin/usuarios/" method="post">
+        <label for="">
+            Nombre
+            <input type="text" name="nombre" >
+
+            <input type="submit" value="Crear">
+        </label>
+
+    </form>
+
+
+    <%- include("partials/footer") %>
+</body>
+
+</html>
