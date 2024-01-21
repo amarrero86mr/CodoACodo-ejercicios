@@ -1,4 +1,4 @@
-# CodoACodo-ejercisiosClases
+# CodoACodo-ejercicios
 Compilation of practices dictated in the course Codo A Codo 2023 FullStack Js Node
 
 I will be uploading the practices of the course of essential languages and tools such as HTML, CSS and Javascript to develop websites on the client side and Node JS together with Express to create services and backend applications.
